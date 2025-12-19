@@ -23,8 +23,8 @@ if __name__ == '__main__':
             "trackrefiner-cli",
             "-i", f"{output_dir}/Objects_properties.csv",
             "-n", f"{output_dir}/Object_relationships.csv",
-            "-t", dt,
-            "-d", doubling_time,
+            "-t", str(dt),
+            "-d", str(doubling_time),
             "-dc",
             "-k"
         ], check=True)
